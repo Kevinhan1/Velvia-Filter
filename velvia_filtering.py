@@ -61,9 +61,3 @@ if uploaded_file is not None:
 
         frames = process_video(uploaded_file)
         st.image(frames[0], caption="Filtered Video Frame Preview", use_column_width=True)
-
-with open("app.py", "w") as f:
-    f.write(code)
-
-from google.colab import files
-files.download("app.py")
